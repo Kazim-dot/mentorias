@@ -1,0 +1,23 @@
+QUESTÃO (1)
+
+public class WrapperExample {
+    public static void main(String[] args) {
+        String numeroTexto = "12345";
+        String texto = "java2025";
+
+        // Converter String para int
+        int numero = Integer.parseInt(numeroTexto);
+        System.out.println("Número convertido: " + numero);
+
+        // Verificar se o primeiro caractere da string é dígito
+        char primeiroChar = texto.charAt(0);
+        boolean ehDigito = Character.isDigit(primeiroChar);
+        System.out.println("Primeiro caractere é dígito? " + ehDigito);
+
+        // Converter string para maiúsculas
+        String textoMaiusculo = texto.toUpperCase();
+        System.out.println("Texto em maiúsculas: " + textoMaiusculo);
+    }
+}
+
+
