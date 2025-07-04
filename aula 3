@@ -1,0 +1,17 @@
+QUESTÃO (1) 
+nome_completo = "KAIQUE DOS SANTOS COSTA"
+idade = 15
+altura = 1.70
+matriculado = True
+
+QUESTÃO(2)
+nome_produto = "Mouse Gamer"
+quantidade_estoque = 25
+preco_unitario = 89.90
+disponivel_para_venda = True
+
+QUESTÃO(3)
+nome_evento = "Feira de Tecnologia 2025"
+numero_participantes = 300
+preco_ingresso = 45.50
+evento_presencial = True
