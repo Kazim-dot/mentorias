@@ -1,0 +1,87 @@
+QUESTÃO(1)
+import java.util.Scanner;
+
+public class CalculoNotaFinal {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Entrada das duas notas
+        System.out.print("Digite a nota da primeira prova: ");
+        double nota1 = scanner.nextDouble();
+
+        System.out.print("Digite a nota da segunda prova: ");
+        double nota2 = scanner.nextDouble();
+
+        // Constante da média mínima para aprovação
+        final double MEDIA_APROVACAO = 7.0;
+
+        // Cálculo da média
+        double media = (nota1 + nota2) / 2;
+
+        // Verificação de aprovação
+        boolean aprovado = media >= MEDIA_APROVACAO;
+
+        // Exibição do resultado
+        System.out.println("Aprovado: " + aprovado);
+
+        scanner.close();
+    }
+}
+
+
+QUESTÃO(2)
+import java.util.Scanner;
+
+public class VerificacaoCompra {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Entrada do preço do produto
+        System.out.print("Digite o preço do produto: ");
+        double precoProduto = scanner.nextDouble();
+
+        // Entrada do valor disponível do cliente
+        System.out.print("Digite o valor que o cliente tem disponível: ");
+        double valorDisponivel = scanner.nextDouble();
+
+        // Constante de desconto
+        final double TAXA_DESCONTO = 0.10;
+
+        // Cálculo do preço com desconto
+        double precoComDesconto = precoProduto - (precoProduto * TAXA_DESCONTO);
+
+        // Verificação se o cliente pode comprar
+        boolean compraPermitida = valorDisponivel >= precoComDesconto;
+
+        // Exibição do resultado
+        System.out.println("Compra permitida: " + compraPermitida);
+
+        scanner.close();
+
+QUESTÃO(3)
+import java.util.Scanner;
+
+public class TriagemDoacaoSangue {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Entrada da idade da pessoa
+        System.out.print("Digite a idade da pessoa: ");
+        int idade = scanner.nextInt();
+
+        // Entrada do peso corporal
+        System.out.print("Digite o peso da pessoa (em kg): ");
+        double peso = scanner.nextDouble();
+
+        // Constante do peso mínimo
+        final double PESO_MINIMO = 50.0;
+
+        // Verificação de elegibilidade para doação
+        boolean aptoParaDoar = idade >= 18 && peso >= PESO_MINIMO;
+
+        // Exibição do resultado
+        System.out.println("Apto para doar: " + aptoParaDoar);
+
+        scanner.close();
+    }
+}
